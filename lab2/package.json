@@ -1,0 +1,22 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start -s -f index.html, css/*.css",
+    "compile:styles": "lessc less/less.style1.less css/less.style1.css && lessc less/less.style2.less css/less.style2.css",
+    "compile:styles:min": "lessc --clean-css less/less.style1.less css/less.style1.min.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "less": "^4.1.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "clean-css": "^5.1.2"
+  }
+}
